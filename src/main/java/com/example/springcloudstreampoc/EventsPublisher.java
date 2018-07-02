@@ -4,7 +4,7 @@ import org.springframework.cloud.stream.annotation.Output;
 import org.springframework.messaging.MessageChannel;
 
 public interface EventsPublisher {
-    String EVENT = "events";
+    String EVENT = "events-publisher";
 
     @Output(EventsPublisher.EVENT)
     MessageChannel events();
